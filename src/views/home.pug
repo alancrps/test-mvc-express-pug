@@ -1,0 +1,12 @@
+html
+  head
+    title= titulo
+  body
+    if usuario_logeado 
+        h2 Bienvenido, #{usuario}
+            h3 Lista de hobbys 
+                ol
+                    each item in lista_hobbys
+                        li= item
+    else 
+        h2 Bienvenido, invitado
